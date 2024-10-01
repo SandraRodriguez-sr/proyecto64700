@@ -1,0 +1,311 @@
+/*
+! important
+ID = aquellas cajas principales o raices / no se pueden repetir
+class = se utiliza para aquellas cajas secundarias / si se pueden repetir
+selectores / etiquetas = cajas semanticas del propio html
+
+*/
+.nav__h1
+
+/*ESTILOS RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+    /*border: 2px red solid;*/
+    text-decoration: none;
+}
+
+/*ul {
+    display: inline-block;
+}*/
+
+ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+/*ESTILOS BODY*/
+#body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*ESTILOS NAVBAR BTS*/
+#navBar {
+    background-color: rgb(187, 228, 241);
+}
+
+
+.navBar__imgLogo {
+    width: 50px;
+}
+
+.caroursel__img, .carrusel {
+    width: 500px;
+    height: 50vh;
+}
+
+/*ESTILOS HEADER2*/
+#header2 {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(187, 229, 243);
+}
+
+#nav2 {
+    height: 100%;
+    display: flex;
+/*ALINEACION HORIZONTAL*/
+    justify-content: space-around;
+/*ALINEACION HORIZONTAL*/
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav__section2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__section-logo2 {
+    width: 50px;
+    height: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS MAIN*/
+#main {
+    /*display: flex;
+    flex-direction: column;*/
+    min-height: 100vh;
+    }
+
+
+
+/*PAGE REGISTRO*/
+#form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: rgb(253, 253, 234);
+
+}
+
+/*
+margin = ESPACIADO EXTERNO DE LA CAJA 
+padding = ESPACIADO INTERNO DE LA CAJA 
+border = BORDER DE LA CAJA 
+content = CONTENIDO DE LA CAJA 
+
+margin- top / left / botton / right
+padding - top  "      "         "
+border - top  / "      "        "
+
+1er manera
+
+        top   right  bottom   left   
+margin: 10px  15px   20px     25px  
+padding  "     "      "       "
+border   "     "      "        " 
+
+2da manera (ocurre si le ponemos solamente 2 valores)
+
+          top/bottom    left/right        
+margin:  10px           15px              
+padding:  "              "           
+border:   "              "           
+
+
+
+border-style
+border-color 
+border-radio
+border: 2px
+border-botom
+
+*/
+
+input {
+    margin-top: 10px;
+}
+
+/*PAGE BUSQUEDA*/
+#form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: rgb(248, 248, 242);
+
+}
+
+
+/*PAGE SELECCION*/
+
+
+/*PAGE PROFESORES*/
+
+
+
+/*GRILLAS PAGE IMAGENES*/
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px auto 200px;
+    grid-template-areas:  
+            /*COL1   COL2   COL3   COL4  COL5    COL6
+    /*FILA1*/   "header header header header header header"
+    /*FILA2*/   "main   main    main   main   main   main"
+    /*FILA3*/   "footer footer  footer footer footer footer ";
+}
+
+#header2 {
+    background-color: rgb(187, 228, 241);
+    grid-area: header;
+}
+
+#main2 {
+    background-color: blueviolet;
+    grid-area: main;
+}
+
+#footer2{
+    background-color: chartreuse;
+    grid-area: footer;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 30%);
+    grid-template-areas: 
+     /*COL1      COL2          COL3           COL4 */
+    "img1        imgHoriz1     imgHoriz1      img2"
+    "imgHoriz2    imgHoriz2     imgHoriz3     imgHoriz3"
+    "img3          img4          img5           img6"
+    ;
+
+    gap: 20px;
+}
+
+
+.img-grid img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.img1 {
+    grid-area: img1;
+}
+
+.imgHoriz1 {
+    grid-area: imgHoriz1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.imgHoriz2 {
+    grid-area: imgHoriz2;
+}
+
+.imgHoriz3 {
+    grid-area: imgHoriz3;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .img-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas: 
+         /*COL1      COL2          COL3           COL4 */
+        "img1"
+        "imgHoriz1"
+        "img2"
+        "imgHoriz2"
+        "imgHoriz3"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        ;
+    
+        gap: 20px;
+    }
+} 
+
+
+
+
+
+
+
+
+/*ESTILOS FOOTER*/
+#footer {
+    display: flex;
+    margin-top: auto;
+    width: 100;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(229, 244, 247);
+
+}
+.footer__logo-img {
+    width: 60px;
+}
+
+.footer__nav-ul {
+display: flex;
+flex-direction: column;
+}
+
+.footer__nav-ul li a {
+    transition: .5s;
+}
+
+
+.footer__nav-ul li a:hover {
+    font-size: 15px;
+    color: deeppink;
+    transition: .5s;
+}
+
+
+
