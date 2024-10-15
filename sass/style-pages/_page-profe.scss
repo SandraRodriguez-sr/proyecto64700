@@ -1,0 +1,15 @@
+/* Estilos para la página de profesores */
+.main-profe-anim {
+    background-color: #f8f9fa; /* Fondo claro para el main */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.card6 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    margin: 10px; /* Espaciado entre tarjetas */
+}
+
+.card6:hover {
+    transform: scale(1.05); /* Escala al pasar el mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}

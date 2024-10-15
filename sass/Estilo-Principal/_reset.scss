@@ -1,0 +1,73 @@
+/*ESTILOS RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+    /*border: 2px red solid;*/
+    text-decoration: none;
+}
+
+/*ul {
+    display: inline-block;
+}*/
+
+ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+/*ESTILOS BODY*/
+#body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*ESTILOS MAIN*/
+#main {
+    /*display: flex;
+    flex-direction: column;*/
+    min-height: 100vh;
+    }
+
+
+
+/*
+margin = ESPACIADO EXTERNO DE LA CAJA 
+padding = ESPACIADO INTERNO DE LA CAJA 
+border = BORDER DE LA CAJA 
+content = CONTENIDO DE LA CAJA 
+
+margin- top / left / botton / right
+padding - top  "      "         "
+border - top  / "      "        "
+
+1er manera
+
+        top   right  bottom   left   
+margin: 10px  15px   20px     25px  
+padding  "     "      "       "
+border   "     "      "        " 
+
+2da manera (ocurre si le ponemos solamente 2 valores)
+
+          top/bottom    left/right        
+margin:  10px           15px              
+padding:  "              "           
+border:   "              "           
+
+
+
+border-style
+border-color 
+border-radio
+border: 2px
+border-botom
+
+*/
+
+input {
+    margin-top: 10px;
+}
+
+

@@ -1,0 +1,23 @@
+/*
+! important
+ID = aquellas cajas principales o raices / no se pueden repetir
+class = se utiliza para aquellas cajas secundarias / si se pueden repetir
+selectores / etiquetas = cajas semanticas del propio html
+
+*/
+
+$tamañoh1 : 40px;
+
+/*IMPORTS RESET*/
+@import "Estilo-Principal/reset";
+@import "Estilo-Principal/header";
+@import "Estilo-Principal/footer";
+
+/*IMPORTS PAGES*/
+@import "style-pages/page-img";
+@import "style-pages/page-info";
+@import "style-pages/page-registro";
+@import "style-pages/page-inicio";
+@import "style-pages/page-busqueda";
+@import "style-pages/page-profe";
+

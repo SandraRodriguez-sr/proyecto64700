@@ -1,0 +1,91 @@
+
+
+/* PAGE INFORMACION */
+
+/* Estilos generales del main */
+#main {
+    padding: 20px;
+    text-align: center; /* Alineación central para el texto */
+}
+
+
+.main-title {
+    font-size: 2.5rem;
+    color: #010a3d;
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+
+.main-description {
+    font-size: 1.2rem;
+    color: #499ce9;
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+.carrusel {
+    margin-bottom: 20px; /* Espacio inferior entre el carrusel y otros elementos */
+}
+
+.carrusel__img {
+    width: 100%; 
+    height: auto; 
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: 40px 0; 
+}
+
+.benefit-item {
+    flex: 1 1 22%; 
+    margin: 10px; 
+    max-width: 300px; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.benefit-item img {
+    width: 50px; 
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+/* Estilo de los botones */
+.button {
+    padding: 15px 25px;
+    margin: 0 10px;
+    background-color: #4CAF50; 
+    color: white; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+/* Cambiar el estilo del botón al pasar el mouse */
+.button:hover {
+    background-color: #45a049; 
+}
+
+/* Estilos para la sección de beneficios */
+.benefits-title {
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+/* Alineación del texto en el título de beneficios */
+.benefit-item h3 {
+    margin: 10px 0; 
+}
+
+/* Alineación del texto en la descripción de beneficios */
+.benefit-item p {
+    margin: 0; 
+}
+

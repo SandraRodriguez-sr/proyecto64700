@@ -1,0 +1,456 @@
+@charset "UTF-8";
+/*
+! important
+ID = aquellas cajas principales o raices / no se pueden repetir
+class = se utiliza para aquellas cajas secundarias / si se pueden repetir
+selectores / etiquetas = cajas semanticas del propio html
+
+*/
+/*IMPORTS RESET*/
+/*ESTILOS RESET*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*border: 2px red solid;*/
+  text-decoration: none;
+}
+
+/*ul {
+    display: inline-block;
+}*/
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+/*ESTILOS BODY*/
+#body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*ESTILOS MAIN*/
+#main {
+  /*display: flex;
+  flex-direction: column;*/
+  min-height: 100vh;
+}
+
+/*
+margin = ESPACIADO EXTERNO DE LA CAJA 
+padding = ESPACIADO INTERNO DE LA CAJA 
+border = BORDER DE LA CAJA 
+content = CONTENIDO DE LA CAJA 
+
+margin- top / left / botton / right
+padding - top  "      "         "
+border - top  / "      "        "
+
+1er manera
+
+        top   right  bottom   left   
+margin: 10px  15px   20px     25px  
+padding  "     "      "       "
+border   "     "      "        " 
+
+2da manera (ocurre si le ponemos solamente 2 valores)
+
+          top/bottom    left/right        
+margin:  10px           15px              
+padding:  "              "           
+border:   "              "           
+
+
+
+border-style
+border-color 
+border-radio
+border: 2px
+border-botom
+
+*/
+input {
+  margin-top: 10px;
+}
+
+.nav__h1 #navBar {
+  background-color: rgb(147, 224, 248);
+  color: rgb(21, 67, 194);
+}
+
+.navBar__imgLogo {
+  width: 50px;
+}
+
+.caroursel__img, .carrusel {
+  width: 500px;
+  height: 50vh;
+}
+
+/*ESTILOS HEADER2*/
+#header2 {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(187, 229, 243);
+}
+
+#nav2 {
+  height: 100%;
+  display: flex;
+  /*ALINEACION HORIZONTAL*/
+  justify-content: space-around;
+  /*ALINEACION HORIZONTAL*/
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav__section2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__section-logo2 {
+  width: 50px;
+}
+
+/*ESTILOS FOOTER*/
+#footer {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(229, 244, 247);
+}
+
+.footer__logo-img {
+  width: 60px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.footer__nav-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__nav-ul li a {
+  transition: 0.5s;
+}
+
+.footer__nav-ul li a:hover {
+  font-size: 15px;
+  color: deeppink;
+  transition: 0.5s;
+}
+
+/*IMPORTS PAGES*/
+/*GRILLAS PAGE IMAGENES*/
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px auto 200px;
+  grid-template-areas: "header header header header header header" "main   main    main   main   main   main" "footer footer  footer footer footer footer ";
+}
+
+#header2 {
+  background-color: rgb(187, 228, 241);
+  grid-area: header;
+}
+
+#main2 {
+  background-color: blueviolet;
+  grid-area: main;
+}
+
+#footer2 {
+  background-color: chartreuse;
+  grid-area: footer;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 30%);
+  grid-template-areas: "img1        imgHoriz1     imgHoriz1      img2" "imgHoriz2    imgHoriz2     imgHoriz3     imgHoriz3" "img3          img4          img5           img6";
+  gap: 20px;
+}
+
+.img-grid img {
+  width: 100%;
+  height: 100%;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.imgHoriz1 {
+  grid-area: imgHoriz1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.imgHoriz2 {
+  grid-area: imgHoriz2;
+}
+
+.imgHoriz3 {
+  grid-area: imgHoriz3;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.img5 {
+  grid-area: img5;
+}
+
+.img6 {
+  grid-area: img6;
+}
+
+@media screen and (max-width: 576px) {
+  .img-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas: "img1" "imgHoriz1" "img2" "imgHoriz2" "imgHoriz3" "img3" "img4" "img5" "img6";
+    gap: 20px;
+  }
+}
+/* Estilos generales para el main */
+.info-main {
+  padding: 20px;
+}
+
+/* Estilos para los títulos de las secciones */
+.info-title {
+  font-size: 1.5rem; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+  font-weight: bold; /* Negrita */
+}
+
+/* Estilos para las descripciones */
+.info-description {
+  color: #555; /* Color del texto */
+  margin: 20px 0; /* Espacio superior e inferior */
+}
+
+/* Estilos de los botones */
+.btn-primary {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #45a049; /* Color al pasar el mouse */
+}
+
+/* Ajustes para el card */
+.card {
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/*PAGE REGISTRO*/
+#main-registro {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#form-registro {
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+#form-registro .form-control {
+  border-radius: 5px;
+}
+
+/* PAGE INFORMACION */
+/* Estilos generales del main */
+#main {
+  padding: 20px;
+  text-align: center; /* Alineación central para el texto */
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: #010a3d;
+  margin: 20px 0; /* Espacio superior e inferior */
+}
+
+.main-description {
+  font-size: 1.2rem;
+  color: #499ce9;
+  margin-bottom: 30px; /* Espacio inferior */
+}
+
+.carrusel {
+  margin-bottom: 20px; /* Espacio inferior entre el carrusel y otros elementos */
+}
+
+.carrusel__img {
+  width: 100%;
+  height: auto;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.benefit-item {
+  flex: 1 1 22%;
+  margin: 10px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.benefit-item img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Estilo de los botones */
+.button {
+  padding: 15px 25px;
+  margin: 0 10px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Cambiar el estilo del botón al pasar el mouse */
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para la sección de beneficios */
+.benefits-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Alineación del texto en el título de beneficios */
+.benefit-item h3 {
+  margin: 10px 0;
+}
+
+/* Alineación del texto en la descripción de beneficios */
+.benefit-item p {
+  margin: 0;
+}
+
+/*PAGE BUSQUEDA*/
+/* Estilos específicos para el main de búsqueda */
+.main-busqueda {
+  background-color: #fff9c4; /* Fondo amarillo claro */
+  padding: 40px 20px;
+  animation: fadeIn 1s ease-in-out; /* Animación de fade-in */
+}
+
+.equipo__contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.animacion-busqueda {
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.animacion-busqueda:hover {
+  transform: rotate(10deg);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  display: block;
+  margin: 0 auto;
+  background-color: #2193b0;
+  border-color: #2193b0;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #176482;
+  border-color: #176482;
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Estilos para la página de profesores */
+.main-profe-anim {
+  background-color: #f8f9fa; /* Fondo claro para el main */
+  padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.card6 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  margin: 10px; /* Espaciado entre tarjetas */
+}
+
+.card6:hover {
+  transform: scale(1.05); /* Escala al pasar el mouse */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+/*# sourceMappingURL=style.css.map */
