@@ -1,6 +1,49 @@
 
+/* Estilos generales para el header */
+#headertodo .navbar-general.navbar-expand-lg {
+    background-color: #ADD8E6 !important; /* Fondo del header en un azul claro */
+    border-bottom: 1px solid #ddd; /* Línea de separación */
+}
 
-/* PAGE INFORMACION */
+#headertodo .navbar-general .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+#headertodo .navbar-general .nav__section-logo2 {
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+#headertodo .navbar-general .navbar-nav .nav-link {
+    font-size: 0.65rem !important; /* Tamaño de fuente más pequeño */
+    color: #333 !important;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; /* Ajuste de padding */
+}
+
+#headertodo .navbar-general .navbar-nav .nav-link i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+#headertodo .navbar-general .navbar-nav .nav-item {
+    margin-right: 10px; /* Espacio entre cada ítem del menú */
+}
+
+#headertodo .navbar-general .navbar-nav .nav-link:hover {
+    color: #4CAF50 !important; /* Color al hacer hover */
+}
+
+#headertodo .navbar-general .navbar-toggler {
+    border-color: #ddd;
+}
+
+
+
+
+
+
+
 
 /* Estilos generales del main */
 #main {
