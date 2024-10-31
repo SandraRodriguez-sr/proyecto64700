@@ -237,21 +237,25 @@ h1 {
 }
 
 /* Estilos generales para el header */
-#headertodo .navbar-general.navbar-expand-lg {
-  background-color: #ADD8E6 !important; /* Fondo del header en un azul claro */
+#headertodo .navbar-general-sol {
+  background-color: #bce3f0 !important; /* Fondo del header en un azul claro */
   border-bottom: 1px solid #ddd; /* Línea de separación */
 }
 
-#headertodo .navbar-general .navbar-brand {
+#headertodo .navbar-general-sol.navbar-expand-lg {
+  background-color: #ADD8E6 !important; /* Reafirmando el color aquí */
+}
+
+#headertodo .navbar-general-sol .navbar-brand {
   display: flex;
   align-items: center;
 }
 
-#headertodo .navbar-general .nav__section-logo2 {
+#headertodo .navbar-general-sol .nav__section-logo2-sol {
   margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
-#headertodo .navbar-general .navbar-nav .nav-link {
+#headertodo .navbar-general-sol .navbar-nav .nav-link {
   font-size: 0.65rem !important; /* Tamaño de fuente más pequeño */
   color: #333 !important;
   display: flex;
@@ -259,19 +263,19 @@ h1 {
   padding: 10px 15px; /* Ajuste de padding */
 }
 
-#headertodo .navbar-general .navbar-nav .nav-link i {
+#headertodo .navbar-general-sol .navbar-nav .nav-link i {
   margin-right: 5px; /* Espacio entre el icono y el texto */
 }
 
-#headertodo .navbar-general .navbar-nav .nav-item {
+#headertodo .navbar-general-sol .navbar-nav .nav-item {
   margin-right: 10px; /* Espacio entre cada ítem del menú */
 }
 
-#headertodo .navbar-general .navbar-nav .nav-link:hover {
+#headertodo .navbar-general-sol .navbar-nav .nav-link:hover {
   color: #4CAF50 !important; /* Color al hacer hover */
 }
 
-#headertodo .navbar-general .navbar-toggler {
+#headertodo .navbar-general-sol .navbar-toggler {
   border-color: #ddd;
 }
 
@@ -293,15 +297,25 @@ h1 {
   margin-bottom: 30px; /* Espacio inferior */
 }
 
+/* Estilos específicos para el carrusel */
 .carrusel {
   margin-bottom: 20px; /* Espacio inferior entre el carrusel y otros elementos */
 }
 
-.carrusel__img {
+.carrusel .carrusel__img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover; /* Asegura que las imágenes llenen el contenedor sin distorsionarse */
 }
 
+.carrusel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la legibilidad */
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Estilos para la sección de beneficios */
 .benefits {
   display: flex;
   flex-wrap: wrap;
@@ -309,21 +323,33 @@ h1 {
   margin: 40px 0;
 }
 
+.benefits-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
 .benefit-item {
   flex: 1 1 22%;
-  margin: 10px;
   max-width: 300px;
+  margin: 10px;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 .benefit-item img {
   width: 50px;
   height: auto;
   margin-bottom: 10px;
+}
+.benefit-item h3 {
+  margin: 10px 0;
+}
+.benefit-item p {
+  margin: 0;
 }
 
 /* Estilo de los botones */
@@ -340,24 +366,6 @@ h1 {
 /* Cambiar el estilo del botón al pasar el mouse */
 .button:hover {
   background-color: #45a049;
-}
-
-/* Estilos para la sección de beneficios */
-.benefits-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-  font-weight: bold;
-}
-
-/* Alineación del texto en el título de beneficios */
-.benefit-item h3 {
-  margin: 10px 0;
-}
-
-/* Alineación del texto en la descripción de beneficios */
-.benefit-item p {
-  margin: 0;
 }
 
 /*PAGE BUSQUEDA*/
